@@ -28,7 +28,9 @@ class Rquote
     end
     return output
   end
-  
+ 
+  private 
+
   def send_request(*args)
     completed_path = @@service_uri + construct_args(*args)
     uri = URI.parse(completed_path)
